@@ -1,0 +1,187 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* STYLE SECTIONING TAGS */
+body {
+ /*background-color: #f6f1ee;*/
+ background-image: url(assets/scratch.jpg);
+}
+
+nav {
+  text-align: center;
+  font-family: "Roboto Mono", monospace; 
+  font-size: 20px;
+  color: #fcdada;
+}
+
+main{
+  text-align: center; 
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+hr.rounded { /*makes the divider rounded*/
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+
+/* STYLE TEXT */
+
+h1 {
+  color: #fcdada;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: underline overline;
+  padding: 0.5em;
+}
+
+.intro{
+  color: #fcdada;
+  font-family: "Roboto Mono", monospace; 
+  text-align: center;
+  padding: 40px;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+p{
+  color: #fcdada;
+  font-family: "Roboto Mono", monospace; 
+  font-size: 15px;
+  padding-top: 1em;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: #fcdada;
+  padding-top: 2em;
+}
+
+#resource-intro{
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+#info{
+  border-style: solid;
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border-color: #fcdada;
+}
+
+.factstuff{ /*styles the fact button section*/
+  background-image: url("assets/holding-apple.jpg");
+  background-position: center top;
+  margin: 0px;
+  padding-bottom: 2em;
+  overflow: none;
+}
+
+#factbutton{ /*styles the fact button*/
+  background-color: #ED7D31;
+  border-radius: 15px;
+  border-color: #fcdada;
+  color: #fcdada;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#factdisplay{
+  padding-bottom: 2em;
+  font-size: 20px;
+}
+
+#factbutton:hover{ /*changes the color of the fact button when hovered over w a mouse*/
+  background-color: #fcdada;
+  color: #ED7D31;
+}
+
+.resourcegal { /*styles the cards on the resource page*/
+  margin: 5px;
+  border: 3px solid #fcdada;
+  border-radius: 5px;
+  background-color: #ED7D31;
+  float: left;
+  width: 170px;
+  padding: 0em;
+}
+
+.resimg { /*styles the images for the cards on the resource page*/
+  width:80%;
+  border-radius: 5px;
+}
+
+.desc { /*styles the descriptions of the cards/links on the resource page*/
+  padding: 15px;
+  text-align: center;
+  color: #fcdada;
+  font-family: "Roboto Mono", monospace;
+}
+
+#links{
+  background: none;
+}
+
+/* STYLE IMAGES */
+
+.gallery{
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#apple{
+  height: 98.25%;
+}
+
+/* STYLE NAV BAR */
+
+ul{
+  list-style-type: none;
+  background-color: #271e1f;
+  overflow: hidden;
+  padding: 1em;
+}
+
+li{
+  display: inline;
+}
+
+li a{
+  text-decoration: none;
+  color: #836f70;
+  font-size: 1em;
+  padding: 1em;
+}
+
+li a:hover{
+  background-color: #380001
+}
+
+a{
+  text-decoration: none;
+  color: #836f70;
+}
+
+a:visited{
+  text-decoration: none; 
+  color: #836f70;
+}
