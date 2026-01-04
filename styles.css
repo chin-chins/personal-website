@@ -32,14 +32,6 @@ hr.rounded { /*makes the divider rounded*/
 
 /* STYLE TEXT */
 
-h1 {
-  color: #fcdada;
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline overline;
-  padding: 0.5em;
-}
-
 .intro{
   color: #fcdada;
   font-family: "Roboto Mono", monospace; 
@@ -55,6 +47,22 @@ p{
   font-size: 15px;
   padding-top: 1em;
   text-align: center;
+}
+
+h1 {
+  color: #fcdada;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: underline overline;
+  padding: 0.5em;
+}
+
+h2 {
+  color: #fcdada;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: underline overline;
+  padding: 0.5em;
 }
 
 h3 {
@@ -152,9 +160,13 @@ h3 {
   height: 98.25%;
 }
 
+#changelog{
+  background-color: white;
+}
+
 /* STYLE NAV BAR */
 
-ul{
+#navbar{
   list-style-type: none;
   background-color: #271e1f;
   overflow: hidden;
