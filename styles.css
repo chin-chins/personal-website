@@ -1,32 +1,59 @@
-*{
+/**{
   margin: 0px;
   padding: 0px;
-}
+}*/
 
 /* STYLE SECTIONING TAGS */
 body {
- /*background-color: #f6f1ee;*/
- background-image: url(assets/scratch.jpg);
+ background-color: #373a43;
+ /*add a backgroud image later*/
 }
 
-nav {
-  text-align: center;
+#nav{
+  font-family: "Roboto Mono", monospace;
+  width: 150px;
+  float: left;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
   font-family: "Roboto Mono", monospace; 
   font-size: 20px;
   color: #fcdada;
 }
 
-main{
+ul{
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+  color: #836f70;
+  font-size: 1em;
+}
+
+li a:hover{
+  background-color: #380001
+}
+
+a{
+  text-decoration: none;
+  color: #836f70;
+}
+
+#main{
   text-align: center; 
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 20%;
   margin-right: 20%;
-}
-
-hr.rounded { /*makes the divider rounded*/
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
 }
 
 
@@ -70,20 +97,6 @@ h3 {
   font-size: 20px;
   color: #fcdada;
   padding-top: 2em;
-}
-
-#resource-intro{
-  padding-bottom: 2em;
-  padding-top: 2em;
-}
-
-#info{
-  border-style: solid;
-  margin: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-  border-color: #fcdada;
 }
 
 .factstuff{ /*styles the fact button section*/
@@ -145,55 +158,9 @@ h3 {
   background: none;
 }
 
-/* STYLE IMAGES */
-
-.gallery{
-  width: 100%;
-}
-
-.row{
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-#apple{
-  height: 98.25%;
-}
-
 #changelog{
-  background-color: white;
+  font-family: "Roboto Mono", monospace;
+  color: #fcdada;
 }
 
-/* STYLE NAV BAR */
 
-#navbar{
-  list-style-type: none;
-  background-color: #271e1f;
-  overflow: hidden;
-  padding: 1em;
-}
-
-li{
-  display: inline;
-}
-
-li a{
-  text-decoration: none;
-  color: #836f70;
-  font-size: 1em;
-  padding: 1em;
-}
-
-li a:hover{
-  background-color: #380001
-}
-
-a{
-  text-decoration: none;
-  color: #836f70;
-}
-
-a:visited{
-  text-decoration: none; 
-  color: #836f70;
-}
