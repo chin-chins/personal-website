@@ -10,6 +10,8 @@ body {
 }
 
 #nav{
+  display: flex;
+  align-items: center;
   font-family: "Roboto Mono", monospace;
   width: 150px;
   float: left;
