@@ -53,7 +53,7 @@ a{
   color: #836f70;
 }
 
-#main{
+main{
   text-align: center; 
   margin-top: 0;
   margin-bottom: 0;
@@ -104,38 +104,6 @@ h3 {
   padding-top: 2em;
 }
 
-.factstuff{ /*styles the fact button section*/
-  background-image: url("assets/holding-apple.jpg");
-  background-position: center top;
-  margin: 0px;
-  padding-bottom: 2em;
-  overflow: none;
-}
-
-#factbutton{ /*styles the fact button*/
-  background-color: #ED7D31;
-  border-radius: 15px;
-  border-color: #fcdada;
-  color: #fcdada;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
-}
-
-#factdisplay{
-  padding-bottom: 2em;
-  font-size: 20px;
-}
-
-#factbutton:hover{ /*changes the color of the fact button when hovered over w a mouse*/
-  background-color: #fcdada;
-  color: #ED7D31;
-}
 
 .resourcegal { /*styles the cards on the resource page*/
   margin: 5px;
