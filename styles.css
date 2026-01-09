@@ -7,7 +7,20 @@
 body {
  background-color: #373a43;
  /*add a backgroud image later*/
+ cursor: url("assets/wii-pointer.png"), auto;
 }
+
+/* .cursor {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0; 
+  display: none;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  /*use the z-index tag if the cursor keeps going behind other elements on the page
+} */
 
 #nav{
   display: flex;
