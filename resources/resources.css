@@ -3,6 +3,10 @@
   padding: 0px;
 }*/
 
+html{
+  cursor: url("/assets/wii-pointer.png"), auto;
+}
+
 /* STYLE SECTIONING TAGS */
 body {
  background-color: #373a43;
