@@ -3,11 +3,22 @@
   padding: 0px;
 }*/
 
+/*fonts*/
+@font-face{
+  font-family: Cherry Bomb One;
+  src: url(assets/Cherry_Bomb_One/CherryBombOne-Regular.ttf);
+}
+
+@font-face{
+  font-family: Sono;
+  src: url(/Sono/static/Sono-Regular.ttf);
+}
+
 html{
   cursor: url("assets/wii-pointer.png"), auto;
 }
 
-/* STYLE SECTIONING TAGS */
+/*main content*/
 body {
  background-color: #373a43;
  /*add a backgroud image later*/
@@ -28,7 +39,7 @@ body {
 #nav{
   display: flex;
   align-items: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Sono", monospace;
   width: 150px;
   float: left;
   display: inline;
@@ -42,14 +53,14 @@ body {
   padding: 0;
   width: 200px;
   height: 100%;
-  font-family: "Roboto Mono", monospace; 
+  font-family: "Sono", monospace; 
   font-size: 20px;
   color: #fcdada;
 }
 
 ul{
   list-style-type: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Sono", monospace;
   padding-left: 0;
   color:#fcdada;
 }
@@ -77,32 +88,34 @@ a{
   margin-right: 20%;
 }
 
-
-/* STYLE TEXT */
-
+/* text */
 .intro{
   color: #fcdada;
-  font-family: "Roboto Mono", monospace; 
+  font-family: "Sono", monospace; 
   text-align: center;
   padding: 40px;
   padding-left: 10em;
   padding-right: 10em;
 }
 
-p{
-  color: #fcdada;
-  font-family: "Roboto Mono", monospace; 
-  font-size: 15px;
-  padding-top: 1em;
+#header{
+  filter: drop-shadow( 0 2px #bd5c1b)
+  drop-shadow( 2px 0 #bd5c1b) 
+  drop-shadow( 0 -1px #f2cda8)
+  drop-shadow( -1px 0 #f2cda8) 
+  drop-shadow( 0 5px white) 
+  drop-shadow( 5px 0 white) 
+  drop-shadow( 0 -5px white) 
+  drop-shadow( -5px 0 white) 
+  drop-shadow(1px 1px 0 #b06a3a) 
+  drop-shadow(1px 1px 0 #b06a3a);
+  color: #e69d45;
   text-align: center;
-}
-
-h1 {
-  color: #fcdada;
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline overline;
-  padding: 0.5em;
+  font-family: "Cherry Bomb One", monospace;
+  padding: 0px;
+  font-size: 50px;
+  border-width: 5px;
+  border-style: solid;
 }
 
 h2 {
@@ -120,64 +133,116 @@ h3 {
   padding-top: 2em;
 }
 
-.factstuff{ /*styles the fact button section*/
-  background-image: url("assets/holding-apple.jpg");
-  background-position: center top;
-  margin: 0px;
-  padding-bottom: 2em;
-  overflow: none;
+p{
+  color: #fcdada;
+  font-family: "Sono", monospace; 
+  font-size: 15px;
+  padding-top: 1em;
+  text-align: center;
 }
 
-#factbutton{ /*styles the fact button*/
-  background-color: #ED7D31;
+.updates{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center flex-start;
+  gap: 2em;
+}
+
+/*currently section*/
+.currently-container{
+  border-image-source: url(assets/pin.png);
+  border-width: 20px;
+  border-style: solid;
   border-radius: 15px;
-  border-color: #fcdada;
-  color: #fcdada;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px 32px;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
+  padding-bottom: 2.5em;
+
+  background-image: url(assets/grid-bg.jpg);
+  background-size: cover;
+  /* overflow: scroll;
+  overflow-x: hidden;
+  overflow-wrap: break-word; */
+  height: 150px;
+  width: 25%;
+  margin-left:auto;
+}
+
+#currently-title{
+  filter: drop-shadow( 0 2px #bd5c1b)
+  drop-shadow( 2px 0 #bd5c1b) 
+  drop-shadow( 0 -1px #f2cda8)
+  drop-shadow( -1px 0 #f2cda8) 
+  drop-shadow( 0 5px white) 
+  drop-shadow( 5px 0 white) 
+  drop-shadow( 0 -5px white) 
+  drop-shadow( -5px 0 white) 
+  drop-shadow(1px 1px 0 #b06a3a) 
+  drop-shadow(1px 1px 0 #b06a3a);
+  color: #e69d45;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Cherry Bomb One", monospace;
+  padding: 0px;
 }
 
-#factdisplay{
-  padding-bottom: 2em;
-  font-size: 20px;
+#currently-text{
+  font-family: "Sono", monospace;
+  color:#FF7C23;
 }
 
-#factbutton:hover{ /*changes the color of the fact button when hovered over w a mouse*/
-  background-color: #fcdada;
-  color: #ED7D31;
+/*changelog section*/
+.changelog-container{
+  border-image-source: url(assets/pin.png);
+  border-width: 20px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-top: 2em;
+  padding: 1em;
+
+  background-image: url(assets/grid-bg.jpg);
+  background-size: cover;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  height: 200px;
+  width: 25%;
+  /* margin-left:auto; */
 }
 
-.resourcegal { /*styles the cards on the resource page*/
-  margin: 5px;
-  border: 3px solid #fcdada;
-  border-radius: 5px;
-  background-color: #ED7D31;
-  float: left;
-  width: 170px;
-  padding: 0em;
+.changelog-container::webkit-scrollbar{
+  width: 8px;
 }
 
-.resimg { /*styles the images for the cards on the resource page*/
-  width:80%;
-  border-radius: 5px;
+.changelog-container::webkit-scrollbar-track{
+  background-color: transparent;
 }
 
-.desc { /*styles the descriptions of the cards/links on the resource page*/
-  padding: 15px;
+.changelog-container::webkit-scrollbar-thumb{
+  background-color: #FF7C23;
+}
+
+#changelog-title{
+  filter: drop-shadow( 0 2px #bd5c1b)
+  drop-shadow( 2px 0 #bd5c1b) 
+  drop-shadow( 0 -1px #f2cda8)
+  drop-shadow( -1px 0 #f2cda8) 
+  drop-shadow( 0 5px white) 
+  drop-shadow( 5px 0 white) 
+  drop-shadow( 0 -5px white) 
+  drop-shadow( -5px 0 white) 
+  drop-shadow(1px 1px 0 #b06a3a) 
+  drop-shadow(1px 1px 0 #b06a3a);
+  color: #e69d45;
   text-align: center;
-  color: #fcdada;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Cherry Bomb One", monospace;
+  padding: 0px;
 }
 
-#changelog{
-  font-family: "Roboto Mono", monospace;
-  color: #fcdada;
+#changelog-text{
+  font-family: "Sono", monospace;
+  color:#FF7C23;
 }
-
 

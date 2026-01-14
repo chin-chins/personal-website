@@ -25,34 +25,35 @@ started on jan 1, 2026
   </head>
   
   <body>
-
-    <!-- <div class="cursor"></div> -->
     
-    <!--use a flexbox for this-->
-    <nav class="nav"> <!--moving to left side of page-->
-      <ul id="navbar">
-        <li>
-          <a href = "/home.html">home</a>
-        </li>
-        <li>
-          <a href = "/about/about.html">about</a>
-        </li>
-        <li>
-          <a href = "/resources/resources.html">resources</a>
-        </li>
-      </ul>
-    </nav>
-
-    <header id="header"> <!--header section of the page-->
-      <!-- this may be either a div or an image, not sure yet-->
-      <h1>one egg pan</h1>   <!--website title-->
-    </header>
-
+    <div class="sidenav">
+      <!--use flexbox for this-->
+      <nav class="nav"> <!--moving to left side of page-->
+        <ul id="navbar">
+          <li>
+            <a href = "/home.html">home</a>
+          </li>
+          <li>
+            <a href = "/about/about.html">about</a>
+          </li>
+          <li>
+            <a href = "/resources/resources.html">resources</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="header-div"> <!--style with image-->
+      <header id="header"> <!--header section of the page-->
+      <h1>one egg pan</h1>   <!--website title--> 
+      </header>
+    </div>
+   
     <!--add a banner (perhaps animated)-->
 
-    <section id="main"><!--the main content-->
+    <div id="main"><!--the main content-->
 
-      <section id="intro"> <!--intro-->
+      <div id="intro"> <!--intro-->
         <p>welcome to the frying pan! my name is chi (she/her), and I'm comp sci and comp engineering student 
           that loves creating! this is the very much wip bubble of the internet that i've created for myself 
           and devoted to my interests and hobbies. It's also a portfolio of sorts that combines 
@@ -63,23 +64,24 @@ started on jan 1, 2026
           this site is very much a work in progress, so things will change often, but i hope to update it with
           new content and projects over time! feel free to look around and come back often for updates (*￣3￣)╭
         </p>
-      </section>
+      </div>
 
-      <section id="currently"> <!--currently section-->
-        <div> <!--styled as a recipe card?-->
-          <h2>currently</h2>
-          <ul>
+      <div class="updates"> <!--stores changelog/currently-->
+
+        <div class="currently-container"> <!--currently section-->
+         <!--styled as a recipe card?-->
+          <h2 id="currently-title">currently</h2>
+          <ul id="currently-text">
             <li>reading: n/a</li>
             <li>watching: n/a</li>
             <li>playing: n/a</li>
             <li>learning: n/a</li>
           </ul>
-        </div>
-      </section>
+      </div>
 
-      <section id="changelog"> <!--updates/changelog-->
-        <h2>changelog</h2> <!--styled as another recipe card-->
-        <ul>
+      <div class="changelog-container"> <!--updates/changelog-->
+        <h2 id="changelog-title">changelog</h2> <!--styled as another recipe card-->
+        <ul id="changelog-text">
           <li>jan 1, 2026: the frying pan is born!</li>
           <li>jan 3, 2026: added intro and changelog sections, edited some things for the about and resources
             pages
@@ -88,25 +90,24 @@ started on jan 1, 2026
             their own folders respectively
           </li>
           <li>jan 11, 2026: finally added a custom cursor!</li>
+          <li>jan 13, 2026: added fonts, edited changelog section</li>
         </ul>
-      </section>
-    
-      <section id="lastfm"> 
-        <div> <!--lastfm music widget section-->
+      </div>
 
-        </div>
-      </section>
+      </div> <!--end of updates div-->
+    
+      <div id="lastfm"> <!--styled as recipe card-->
+      </div>
 
       <!--other sections to be added later-->
 
-    </section><!--end of main section-->
+    </div><!--end of main section-->
 
-      
-
+    
     <footer> <!--footer section of the page-->
       <p>© made with love by me :3</p>
       <!--include a last updated date here along with a back to top button-->
-      <p>last updated: jan 5, 2026</p>
+      <p>last updated: jan 13, 2026</p>
     </footer>
 
   </body>
