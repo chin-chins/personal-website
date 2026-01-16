@@ -25,35 +25,16 @@ started on jan 1, 2026
   </head>
   
   <body>
-    
-    <div class="sidenav">
-      <!--use flexbox for this-->
-      <nav class="nav"> <!--moving to left side of page-->
-        <ul id="navbar">
-          <li>
-            <a href = "/home.html">home</a>
-          </li>
-          <li>
-            <a href = "/about/about.html">about</a>
-          </li>
-          <li>
-            <a href = "/resources/resources.html">resources</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    
-    <div class="header-div"> <!--style with image-->
-      <header id="header"> <!--header section of the page-->
-      <h1>one egg pan</h1>   <!--website title--> 
-      </header>
-    </div>
-   
-    <!--add a banner (perhaps animated)-->
 
-    <div id="main"><!--the main content-->
+    <div class="container">
 
-      <div id="intro"> <!--intro-->
+      <div class="header"><!--style with image-->
+        <header> <!--header section of the page-->
+        <h1>one egg pan</h1>   <!--website title--> 
+        </header> <!--add a banner (perhaps animated)-->
+      </div>
+
+      <div class="intro">
         <p>welcome to the frying pan! my name is chi (she/her), and I'm comp sci and comp engineering student 
           that loves creating! this is the very much wip bubble of the internet that i've created for myself 
           and devoted to my interests and hobbies. It's also a portfolio of sorts that combines 
@@ -65,49 +46,54 @@ started on jan 1, 2026
           new content and projects over time! feel free to look around and come back often for updates (*￣3￣)╭
         </p>
       </div>
-
-      <div class="updates"> <!--stores changelog/currently-->
-
-        <div class="currently-container"> <!--currently section-->
-         <!--styled as a recipe card?-->
-          <h2 id="currently-title">currently</h2>
-          <ul id="currently-text">
-            <li>reading: n/a</li>
-            <li>watching: n/a</li>
-            <li>playing: n/a</li>
-            <li>learning: n/a</li>
-          </ul>
+        
+      <div class="nav box">
+        <nav>
+          <h2>navigation</h2>
+          <a href = "/home.html">home</a>
+          <a href = "/about/about.html">about</a>
+          <a href = "/resources/resources.html">resources</a>
+        </nav>
       </div>
 
-      <div class="changelog-container"> <!--updates/changelog-->
-        <h2 id="changelog-title">changelog</h2> <!--styled as another recipe card-->
-        <ul id="changelog-text">
-          <li>jan 1, 2026: the frying pan is born!</li>
-          <li>jan 3, 2026: added intro and changelog sections, edited some things for the about and resources
-            pages
-          </li>
-          <li>jan 5, 2026: edited nav bar and played around with css, moved about/resource pages to
-            their own folders respectively
-          </li>
-          <li>jan 11, 2026: finally added a custom cursor!</li>
-          <li>jan 13, 2026: added fonts, edited changelog section</li>
+      <div class="currently box">
+        <!--styled as a recipe card?-->
+        <h2>currently</h2>
+        <ul>
+          <li>mood: motivated (๑•̀ㅂ•́)و✧</li>
+          <li>reading: Vegetarian by <i>Han Kang</i></li>
+          <li>watching: The Pitt</li>
+          <li>playing: Zenless Zone Zero</li>
+          <li>learning: data structures</li>
         </ul>
       </div>
 
-      </div> <!--end of updates div-->
-    
-      <div id="lastfm"> <!--styled as recipe card-->
+      <div class="devlog box">
+        <h2>devlog</h2> <!--styled as another recipe card-->
+        <ul>
+          <li>jan 15, 2026: fixed page layout with grid</li>
+          <li>jan 14, 2026: adjusted nav bar position</li>
+          <li>jan 13, 2026: added fonts, edited changelog section</li>
+          <li>jan 11, 2026: finally added a custom cursor!</li>
+          <li>jan 5, 2026: edited nav bar and played around with css, moved about/resource pages to
+            their own folders respectively
+          </li>
+          <li>jan 3, 2026: added intro and changelog sections, edited some things for the about and resources
+            pages
+          </li>
+          <li>jan 1, 2026: the frying pan is born!</li>
+        </ul>
       </div>
 
-      <!--other sections to be added later-->
+      <div class="music player"></div><!--styled as recipe card-->
 
-    </div><!--end of main section-->
-
+      <div class="sticker"></div>
+    </div> <!--end of container-->
     
     <footer> <!--footer section of the page-->
       <p>© made with love by me :3</p>
       <!--include a last updated date here along with a back to top button-->
-      <p>last updated: jan 13, 2026</p>
+      <p>last updated: jan 16, 2026</p>
     </footer>
 
   </body>

@@ -1,7 +1,4 @@
-/**{
-  margin: 0px;
-  padding: 0px;
-}*/
+
 
 /*fonts*/
 @font-face{
@@ -22,227 +19,154 @@ html{
 body {
  background-color: #373a43;
  /*add a backgroud image later*/
-}
-
-/* .cursor {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: 0; 
-  display: none;
-  width: 20px;
-  height: 20px;
-  transform: translate(-50%, -50%);
-  /*use the z-index tag if the cursor keeps going behind other elements on the page
-} */
-
-#nav{
-  display: flex;
-  align-items: center;
   font-family: "Sono", monospace;
-  width: 150px;
-  float: left;
-  display: inline;
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
-}
-
-.navbar{
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  height: 100%;
-  font-family: "Sono", monospace; 
-  font-size: 20px;
-  color: #fcdada;
-}
-
-ul{
-  list-style-type: none;
-  font-family: "Sono", monospace;
-  padding-left: 0;
-  color:#fcdada;
-}
-
-li a{
-  text-decoration: none;
-  color: #836f70;
-  font-size: 1em;
-}
-
-li a:hover{
-  background-color: #380001
-}
-
-a{
-  text-decoration: none;
-  color: #836f70;
-}
-
-#main{
-  text-align: center; 
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-/* text */
-.intro{
-  color: #fcdada;
-  font-family: "Sono", monospace; 
+  color: #FF7C23;
   text-align: center;
-  padding: 40px;
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
-#header{
-  filter: drop-shadow( 0 2px #bd5c1b)
-  drop-shadow( 2px 0 #bd5c1b) 
-  drop-shadow( 0 -1px #f2cda8)
-  drop-shadow( -1px 0 #f2cda8) 
-  drop-shadow( 0 5px white) 
-  drop-shadow( 5px 0 white) 
-  drop-shadow( 0 -5px white) 
-  drop-shadow( -5px 0 white) 
-  drop-shadow(1px 1px 0 #b06a3a) 
-  drop-shadow(1px 1px 0 #b06a3a);
+/*general text styling*/
+h2 {
+  filter: drop-shadow( 0 0.125rem #bd5c1b)
+  drop-shadow( 0.125rem 0 #bd5c1b) 
+  drop-shadow( 0 -0.063rem #f2cda8)
+  drop-shadow( -0.063rem 0 #f2cda8) 
+  drop-shadow( 0 0.313rem white) 
+  drop-shadow( 0.313rem 0 white) 
+  drop-shadow( 0 -0.313rem white) 
+  drop-shadow( -0.313rem 0 white) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a);
   color: #e69d45;
   text-align: center;
   font-family: "Cherry Bomb One", monospace;
-  padding: 0px;
-  font-size: 50px;
-  border-width: 5px;
-  border-style: solid;
-}
-
-h2 {
-  color: #fcdada;
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline overline;
-  padding: 0.5em;
-}
-
-h3 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 20px;
-  color: #fcdada;
-  padding-top: 2em;
+  padding: 0rem;
 }
 
 p{
-  color: #fcdada;
-  font-family: "Sono", monospace; 
-  font-size: 15px;
-  padding-top: 1em;
+  font-size: 0.938rem;
   text-align: center;
 }
 
-.updates{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: space-between;
-  align-items: center flex-start;
-  gap: 2em;
+a{
+  font-size: 0.938rem;
+  /* padding-top: 1rem; */
+  text-align: center;
+}
+/*add hover effect to links later*/
+
+ul{
+  list-style-type: none;
 }
 
-/*currently section*/
-.currently-container{
-  border-image-source: url(assets/pin.png);
-  border-width: 20px;
-  border-style: solid;
-  border-radius: 15px;
-  padding-left: 0em;
-  padding-right: 0em;
-  padding-top: 0em;
-  padding-bottom: 2.5em;
-
-  background-image: url(assets/grid-bg.jpg);
-  background-size: cover;
-  /* overflow: scroll;
-  overflow-x: hidden;
-  overflow-wrap: break-word; */
-  height: 150px;
-  width: 25%;
-  margin-left:auto;
+/*grid layout*/
+.container {  
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: 0.313rem 1.25rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". header header header ."
+    ". nav intro intro ."
+    ". nav currently devlog ."
+    ". nav sticker music-player ."
 }
 
-#currently-title{
-  filter: drop-shadow( 0 2px #bd5c1b)
-  drop-shadow( 2px 0 #bd5c1b) 
-  drop-shadow( 0 -1px #f2cda8)
-  drop-shadow( -1px 0 #f2cda8) 
-  drop-shadow( 0 5px white) 
-  drop-shadow( 5px 0 white) 
-  drop-shadow( 0 -5px white) 
-  drop-shadow( -5px 0 white) 
-  drop-shadow(1px 1px 0 #b06a3a) 
-  drop-shadow(1px 1px 0 #b06a3a);
+.header { 
+  filter: drop-shadow( 0 0.125rem #bd5c1b)
+  drop-shadow( 0.125rem 0 #bd5c1b) 
+  drop-shadow( 0 -0.063rem #f2cda8)
+  drop-shadow( -0.063rem 0 #f2cda8) 
+  drop-shadow( 0 0.313rem white) 
+  drop-shadow( 0.313rem 0 white) 
+  drop-shadow( 0 -0.313rem white) 
+  drop-shadow( -0.313rem 0 white) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a);
   color: #e69d45;
   text-align: center;
   font-family: "Cherry Bomb One", monospace;
-  padding: 0px;
-}
-
-#currently-text{
-  font-family: "Sono", monospace;
-  color:#FF7C23;
-}
-
-/*changelog section*/
-.changelog-container{
-  border-image-source: url(assets/pin.png);
-  border-width: 20px;
+  
+  padding:0rem;
+  margin:0rem;
+  width: auto;
+  height: auto;
+  font-size: 3.438rem;
+  border-width: 0.313rem;
   border-style: solid;
-  border-radius: 15px;
-  margin-top: 2em;
-  padding: 1em;
+
+  transform: scale(0.75);
+  grid-area: header; 
+}
+
+.intro { 
+  text-align: center;
+  border-width: 0.313rem;
+  border-style: ridge;
+  border-color: #FF7C23;
+
+  grid-area: intro; 
+}
+
+.nav { 
+  background-image: url(assets/grid-bg.jpg);
+  background-size: cover;
+  border-image-source: url(assets/pin.png);
+  border-width: 1.25rem;
+  border-style: solid;
+  border-radius: 0.938rem;
+  /*get links into column*/
+  grid-area: nav; 
+}
+
+nav a{
+  text-decoration: underline;
+  color: #FF7C23;
+} 
+
+.currently { /*reduce size of div later*/
+  grid-area: currently; 
+}
+
+.devlog {  
+  grid-area: devlog;
+}
+
+.box{
+  border-image-source: url(assets/pin.png);
+  border-width: 1.25rem;
+  border-style: solid;
+  border-radius: 0.938rem;
 
   background-image: url(assets/grid-bg.jpg);
   background-size: cover;
   overflow: scroll;
   overflow-x: hidden;
   overflow-wrap: break-word;
-  height: 200px;
-  width: 25%;
-  /* margin-left:auto; */
 }
 
-.changelog-container::webkit-scrollbar{
-  width: 8px;
+.box::webkit-scrollbar{
+  width: 0.5rem;
 }
-
-.changelog-container::webkit-scrollbar-track{
+.box::-webkit-scrollbar-thumb{
+  background-color: #FF7C23;
+  border-radius: 0.625rem;
+}
+.box::webkit-scrollbar-track{
   background-color: transparent;
 }
 
-.changelog-container::webkit-scrollbar-thumb{
-  background-color: #FF7C23;
+.music-player { 
+  grid-area: music player; 
 }
 
-#changelog-title{
-  filter: drop-shadow( 0 2px #bd5c1b)
-  drop-shadow( 2px 0 #bd5c1b) 
-  drop-shadow( 0 -1px #f2cda8)
-  drop-shadow( -1px 0 #f2cda8) 
-  drop-shadow( 0 5px white) 
-  drop-shadow( 5px 0 white) 
-  drop-shadow( 0 -5px white) 
-  drop-shadow( -5px 0 white) 
-  drop-shadow(1px 1px 0 #b06a3a) 
-  drop-shadow(1px 1px 0 #b06a3a);
-  color: #e69d45;
-  text-align: center;
-  font-family: "Cherry Bomb One", monospace;
-  padding: 0px;
+.sticker { 
+  grid-area: sticker; 
 }
 
-#changelog-text{
-  font-family: "Sono", monospace;
-  color:#FF7C23;
-}
+
+
+
+
+
 
