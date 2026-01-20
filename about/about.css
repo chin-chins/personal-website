@@ -1,171 +1,151 @@
-/**{
-  margin: 0px;
-  padding: 0px;
-}*/
-
-html{
-  cursor: url("/assets/wii-pointer.png"), auto;
+/*fonts*/
+@font-face{
+  font-family: Cherry Bomb One;
+  src: url(assets/Cherry_Bomb_One/CherryBombOne-Regular.ttf);
 }
 
-/* STYLE SECTIONING TAGS */
+@font-face{
+  font-family: Sono;
+  src: url(/assets/Sono/static/Sono-Regular.ttf);
+}
+
+html{
+  cursor: url("assets/wii-pointer.png"), auto;
+}
+
+/*main content*/
 body {
  background-color: #373a43;
  /*add a backgroud image later*/
-}
-
-#nav{
-  display: flex;
-  align-items: center;
-  font-family: "Roboto Mono", monospace;
-  width: 150px;
-  float: left;
-  display: inline;
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
-}
-
-.navbar{
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  height: 100%;
-  font-family: "Roboto Mono", monospace; 
-  font-size: 20px;
-  color: #fcdada;
-}
-
-ul{
-  list-style-type: none;
-  font-family: "Roboto Mono", monospace;
-  padding-left: 0;
-  color:#fcdada;
-}
-
-li a{
-  text-decoration: none;
-  color: #836f70;
-  font-size: 1em;
-}
-
-li a:hover{
-  background-color: #380001
-}
-
-a{
-  text-decoration: none;
-  color: #836f70;
-}
-
-main{
-  text-align: center; 
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-
-/* STYLE TEXT */
-
-.intro{
-  color: #fcdada;
-  font-family: "Roboto Mono", monospace; 
+  font-family: "Sono", monospace;
+  color: #FF7C23;
   text-align: center;
-  padding: 40px;
-  padding-left: 10em;
-  padding-right: 10em;
+}
+
+h1{
+  filter: drop-shadow( 0 0.125rem #bd5c1b)
+  drop-shadow( 0.125rem 0 #bd5c1b) 
+  drop-shadow( 0 -0.063rem #f2cda8)
+  drop-shadow( -0.063rem 0 #f2cda8) 
+  drop-shadow( 0 0.313rem white) 
+  drop-shadow( 0.313rem 0 white) 
+  drop-shadow( 0 -0.313rem white) 
+  drop-shadow( -0.313rem 0 white) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a);
+  color: #e69d45;
+  text-align: center;
+  font-family: "Cherry Bomb One", monospace;
+
+  padding: 0rem;
+  margin: 0rem;
+}
+
+/*general text styling*/
+h2 {
+  filter: drop-shadow( 0 0.125rem #bd5c1b)
+  drop-shadow( 0.125rem 0 #bd5c1b) 
+  drop-shadow( 0 -0.063rem #f2cda8)
+  drop-shadow( -0.063rem 0 #f2cda8) 
+  drop-shadow( 0 0.313rem white) 
+  drop-shadow( 0.313rem 0 white) 
+  drop-shadow( 0 -0.313rem white) 
+  drop-shadow( -0.313rem 0 white) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a) 
+  drop-shadow(0.063rem 0.063rem 0 #b06a3a);
+  color: #e69d45;
+  text-align: center;
+  font-family: "Cherry Bomb One", monospace;
+  padding: 0rem;
 }
 
 p{
-  color: #fcdada;
-  font-family: "Roboto Mono", monospace; 
-  font-size: 15px;
-  padding-top: 1em;
+  font-size: 0.938rem;
   text-align: center;
 }
 
-h1 {
-  color: #fcdada;
+a{
+  font-size: 0.938rem;
+  /* padding-top: 1rem; */
   text-align: center;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline overline;
-  padding: 0.5em;
+}
+/*add hover effect to links later*/
+
+ul{
+  list-style-type: none;
 }
 
-h2 {
-  color: #fcdada;
+/*grid layout*/
+.container {  
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0.313rem 1.25rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". header header header ."
+    ". nav about about ."
+    ". nav about about ."
+}
+
+.header { 
+  margin-bottom: 2rem;
+  width: auto;
+  height: auto;
+  font-size: 3.438rem;
+
+  background-image: url(/assets/istockphoto-993410660-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 0px 0px 10px 10px;
+
+  border: 5px solid white;
+  border-top: none;
+
+  /* border-width: 100px;
+  border-image-slice: 111 105 108 105;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-image-source: url(/assets/border-design.png); */
+
+  /* transform: scale(0.75); */
+  grid-area: header; 
+}
+
+.about { 
   text-align: center;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: underline overline;
-  padding: 0.5em;
+  border-width: 0.313rem;
+  border-style: ridge;
+  border-color: #FF7C23;
+
+  grid-area: about; 
 }
 
-h3 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 20px;
-  color: #fcdada;
-  padding-top: 2em;
+.nav { 
+  background-image: url(/assets/grid-bg.jpg);
+  background-size: cover;
+  border-image-source: url(/assets/pin.png);
+  border-width: 1.25rem;
+  border-style: solid;
+  border-radius: 0.938rem;
+  /*get links into column*/
+  grid-area: nav; 
 }
 
-.factstuff{ /*styles the fact button section*/
-  background-image: url("assets/holding-apple.jpg");
-  background-position: center top;
-  margin: 0px;
-  padding-bottom: 2em;
-  overflow: none;
+nav a{
+  text-decoration: underline;
+  color: #FF7C23;
 }
 
-#factbutton{ /*styles the fact button*/
-  background-color: #ED7D31;
-  border-radius: 15px;
-  border-color: #fcdada;
-  color: #fcdada;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Roboto Mono", monospace;
-}
 
-#factdisplay{
-  padding-bottom: 2em;
-  font-size: 20px;
-}
 
-#factbutton:hover{ /*changes the color of the fact button when hovered over w a mouse*/
-  background-color: #fcdada;
-  color: #ED7D31;
-}
 
-.resourcegal { /*styles the cards on the resource page*/
-  margin: 5px;
-  border: 3px solid #fcdada;
-  border-radius: 5px;
-  background-color: #ED7D31;
-  float: left;
-  width: 170px;
-  padding: 0em;
-}
 
-.resimg { /*styles the images for the cards on the resource page*/
-  width:80%;
-  border-radius: 5px;
-}
 
-.desc { /*styles the descriptions of the cards/links on the resource page*/
-  padding: 15px;
-  text-align: center;
-  color: #fcdada;
-  font-family: "Roboto Mono", monospace;
-}
 
-#changelog{
-  font-family: "Roboto Mono", monospace;
-  color: #fcdada;
-}
+
 
 
