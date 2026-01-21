@@ -13,6 +13,10 @@ html{
   cursor: url("assets/wii-pointer.png"), auto;
 }
 
+:root{
+  scroll-behavior: smooth;
+}
+
 /*main content*/
 body {
  background-color: #373a43;
@@ -67,7 +71,13 @@ p{
 a{
   font-size: 0.938rem;
   /* padding-top: 1rem; */
+  font-family: "Sono", monospace;
+  color: #FF7C23;
   text-align: center;
+}
+
+.back2top{
+  color: #F2CDA8;
 }
 /*add hover effect to links later*/
 

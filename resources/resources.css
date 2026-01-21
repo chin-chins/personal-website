@@ -13,6 +13,11 @@ html{
   cursor: url("assets/wii-pointer.png"), auto;
 }
 
+:root{
+  scroll-behavior: smooth;
+}
+
+
 /*main content*/
 body {
  background-color: #373a43;
@@ -67,9 +72,14 @@ p{
 a{
   font-size: 0.938rem;
   /* padding-top: 1rem; */
+  font-family: "Sono", monospace;
+  color: #FF7C23;
   text-align: center;
 }
-/*add hover effect to links later*/
+
+.back2top{
+  color: #F2CDA8;
+}
 
 ul{
   list-style-type: none;
@@ -85,7 +95,7 @@ ul{
   grid-template-areas:
     ". header header header ."
     ". nav resources resources ."
-    ". nav resources resources ."
+    ". nav pantry pantry ."
 }
 
 .header { 
@@ -121,7 +131,7 @@ ul{
   border-style: ridge;
   border-color: #FF7C23;
 
-  grid-area: about; 
+  grid-area: resources; 
 }
 
 .nav { 
@@ -140,8 +150,9 @@ nav a{
   color: #FF7C23;
 }
 
-
-
+.pantry{
+  grid-area: pantry;
+}
 
 
 
