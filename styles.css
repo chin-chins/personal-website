@@ -151,10 +151,21 @@ ul{
 nav a{
   text-decoration: underline;
   color: #FF7C23;
-} 
+}
+
+.nav:hover{
+  transform: rotate(-3deg);
+  transition: transform 1s;
+}
+
 
 .currently { /*reduce size of div later*/
   grid-area: currently; 
+}
+
+.currently:hover{
+  transform: rotate(3deg);
+  transition: transform 0.5s;
 }
 
 .devlog {  
